@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Emmanuel T. Obidike - Cloud Security, DevOps, DevSecOps and AI Engineering portfolio.">
+    <meta name="author" content="Emmanuel T. Obidike">
+
+    <title>Emmanuel T. Obidike | Cloud & AI Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        header {
+            background: #111827;
+            border-bottom: 1px solid #263449;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav ul a {
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        nav ul a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 105px 0;
+            background: linear-gradient(135deg, #111827, #172554);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .eyebrow {
+            color: #38bdf8;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            line-height: 1.15;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            color: #38bdf8;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 17px;
+            max-width: 750px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .primary {
+            background: #0284c7;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            color: #94a3b8;
+            margin-bottom: 35px;
+            max-width: 750px;
+        }
+
+        .about {
+            background: #111827;
+        }
+
+        .skills-grid,
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #172033;
+            border: 1px solid #29374d;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: #1e3a5f;
+            color: #7dd3fc;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .project-status {
+            display: inline-block;
+            color: #fbbf24;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        .contact {
+            background: #111827;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #080d18;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero {
+                padding: 75px 0;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">EMMANUEL OBIDIKE</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Engineering Portfolio
+            </div>
+
+            <h1>
+                Emmanuel T. Obidike
+            </h1>
+
+            <h2>
+                Cloud Security | DevOps | AI Engineering
+            </h2>
+
+            <p>
+                I design and build secure, intelligent and automated
+                technology solutions that address real-world business
+                challenges.
+
+                My interests include cloud security, DevSecOps,
+                healthcare technology, AI agents and Forward Deployed
+                AI Engineering.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">
+                    Explore My Projects
+                </a>
+
+                <a href="https://github.com/Emmatos"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn secondary">
+                    Visit My GitHub
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="section-intro">
+            I am a pharmacist with professional experience across
+            hospital, community and retail pharmacy settings,
+            developing my expertise in cloud security, DevOps
+            and AI-powered business solutions.
+
+            I combine healthcare domain knowledge with technology
+            to explore practical solutions to complex business
+            and operational problems.
+        </p>
+
+        <p>
+            My engineering interests include secure cloud architecture,
+            infrastructure automation, application security,
+            healthcare data engineering and intelligent workflow
+            automation.
+        </p>
+
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+
+        <h2 class="section-title">Technical Focus Areas</h2>
+
+        <p class="section-intro">
+            Technologies and engineering disciplines I am
+            developing through practical projects.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="card">
+                <h3>Cloud Security</h3>
+                <p>
+                    Secure cloud architecture, IAM, network security,
+                    monitoring, threat detection and incident response.
+                </p>
+                <div class="tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">IAM</span>
+                    <span class="tag">CloudTrail</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>DevOps & DevSecOps</h3>
+                <p>
+                    Infrastructure as Code, CI/CD automation,
+                    containerization and software security testing.
+                </p>
+                <div class="tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">GitHub Actions</span>
+                    <span class="tag">Kubernetes</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI Engineering</h3>
+                <p>
+                    AI agents, retrieval-augmented generation,
+                    API integration and business workflow automation.
+                </p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">LLMs</span>
+                    <span class="tag">AI Agents</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Healthcare Technology</h3>
+                <p>
+                    Healthcare data engineering, FHIR integration,
+                    electronic health records and pharmacy intelligence.
+                </p>
+                <div class="tags">
+                    <span class="tag">FHIR</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Healthcare Data</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+
+        <h2 class="section-title">Featured Engineering Projects</h2>
+
+        <p class="section-intro">
+            Practical engineering projects designed to demonstrate
+            how technology can solve business problems.
+            Project implementations will be published progressively.
+        </p>
+
+        <div class="projects-grid">
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>Cloud Security Operations</h3>
+                <p>
+                    A simulated cloud security monitoring platform
+                    for detecting suspicious activities and
+                    analyzing network traffic.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>Healthcare Data Engineering</h3>
+                <p>
+                    A synthetic healthcare data platform demonstrating
+                    secure patient records, FHIR integration and
+                    data processing.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>DevSecOps Automation</h3>
+                <p>
+                    An automated CI/CD pipeline incorporating
+                    infrastructure validation, container scanning
+                    and security testing.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>AI Healthcare Intelligence</h3>
+                <p>
+                    An AI-powered knowledge assistant demonstrating
+                    healthcare information retrieval and
+                    responsible AI integration.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>Business AI Agents</h3>
+                <p>
+                    Intelligent agents designed to automate
+                    business workflows through controlled
+                    API integrations.
+                </p>
+            </div>
+
+            <div class="card">
+                <span class="project-status">PLANNED</span>
+                <h3>Forward Deployed AI Engineering</h3>
+                <p>
+                    An end-to-end demonstration of identifying
+                    business problems and delivering integrated
+                    AI-powered solutions.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+
+        <h2 class="section-title">
+            Let's Build Something Meaningful
+        </h2>
+
+        <p>
+            Interested in cloud security, DevOps automation,
+            healthcare technology or AI-powered business solutions?
+            Let's connect.
+        </p>
+
+        <a href="https://github.com/Emmatos"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn primary">
+            Connect on GitHub
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    <p>
+        &copy; 2026 Emmanuel T. Obidike.
+        Engineering Portfolio. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
