@@ -80,9 +80,41 @@
             background: linear-gradient(135deg, #111827, #172554);
         }
 
-        .hero-content {
-            max-width: 850px;
-        }
+        
+.hero-content {
+    max-width: 1100px;
+    position: relative;
+    padding-right: 300px;
+    min-height: 300px;
+}
+
+.profile-photo {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 16px;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 650px) {
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .profile-photo {
+        position: static;
+        display: block;
+        width: 190px;
+        height: 230px;
+        margin-top: 30px;
+    }
+}
+
 
         .eyebrow {
             color: #38bdf8;
@@ -284,6 +316,7 @@
                 AI Engineering.
             </p>
 
+            
             <div class="buttons">
                 <a href="#projects" class="btn primary">
                     Explore My Projects
@@ -297,7 +330,16 @@
                 </a>
             </div>
 
+            <!-- YOUR PROFILE PHOTOGRAPH STARTS HERE -->
+            <img
+                src="assets/profile.jpg"
+                alt="Emmanuel T. Obidike"
+                class="profile-photo"
+            >
+            <!-- YOUR PROFILE PHOTOGRAPH ENDS HERE -->
+
         </div>
+
     </div>
 </section>
 
